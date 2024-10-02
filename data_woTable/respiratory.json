@@ -1,0 +1,36 @@
+{
+  "nodes": {
+    "smoking": "bool",
+    "respiratory disease": "bool",
+    "lung cancer": "bool",
+    "asbestos exposure": "bool"
+  },
+  "synonyms": {
+    "smoking": ["smoker", "cigarette"],
+    "respiratory disease": ["lung disease"],
+    "lung cancer": ["lung carcinoma"],
+    "asbestos exposure": ["exposure to asbestos"]
+  },
+  "edges": [
+    [
+      "smoking",
+      "respiratory disease"
+    ],
+    [
+      "respiratory disease",
+      "lung cancer"
+    ],
+    [
+      "smoking",
+      "lung cancer"
+    ],
+    [
+      "asbestos exposure",
+      "respiratory disease"
+    ],
+    [
+      "asbestos exposure",
+      "lung cancer"
+    ]
+  ]
+}

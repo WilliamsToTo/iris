@@ -1,0 +1,34 @@
+{
+  "nodes": {
+    "pollution": "bool",
+    "smoker": "bool",
+    "cancer": "bool",
+    "x-ray": "bool",
+    "dyspnoea": "bool"
+  },
+  "synonyms": {
+    "pollution": ["contamination"],
+    "smoker": ["smoking", "tobacco"],
+    "cancer": ["tumor", "carcinoma"],
+    "x-ray": [],
+    "dyspnoea": ["difficulty in breathing"]
+  },
+  "edges": [
+    [
+      "pollution",
+      "cancer"
+    ],
+    [
+      "smoker",
+      "cancer"
+    ],
+    [
+      "cancer",
+      "x-ray"
+    ],
+    [
+      "cancer",
+      "dyspnoea"
+    ]
+  ]
+}

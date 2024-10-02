@@ -1,0 +1,36 @@
+{
+  "nodes": {
+    "lack of exercise": "bool",
+    "body weight": "bool",
+    "diabetes": "bool",
+    "diet": "bool"
+  },
+  "synonyms": {
+    "lack of exercise": ["insufficient exercise"],
+    "body weight": ["weight"],
+    "diabetes": [],
+    "diet": []
+  },
+  "edges": [
+    [
+      "lack of exercise",
+      "body weight"
+    ],
+    [
+      "body weight",
+      "diabetes"
+    ],
+    [
+      "lack of exercise",
+      "diabetes"
+    ],
+    [
+      "diet",
+      "body weight"
+    ],
+    [
+      "diet",
+      "diabetes"
+    ]
+  ]
+}

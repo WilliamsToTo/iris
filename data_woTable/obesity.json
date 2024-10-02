@@ -1,0 +1,36 @@
+{
+  "nodes": {
+    "obesity": "bool",
+    "heart failure": "bool",
+    "mortality": "bool",
+    "heart defect": "bool"
+  },
+  "synonyms": {
+    "obesity": ["overweight"],
+    "heart failure": ["cardiac failure"],
+    "mortality": ["death"],
+    "heart defect": ["cardiac defect"]
+  },
+  "edges": [
+    [
+      "obesity",
+      "heart failure"
+    ],
+    [
+      "heart failure",
+      "mortality"
+    ],
+    [
+      "obesity",
+      "mortality"
+    ],
+    [
+      "heart defect",
+      "heart failure"
+    ],
+    [
+      "heart defect",
+      "mortality"
+    ]
+  ]
+}

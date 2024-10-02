@@ -1,0 +1,52 @@
+{
+  "nodes": {
+    "age": "bool",
+    "sex": "bool",
+    "education level": "bool",
+    "fludeoxyglucose PET": "bool",
+    "amyloid beta": "bool",
+    "phosphorylated tau": "bool",
+    "APOE epsilon 4 allele": "bool",
+    "diagnosis of alzheimer’s dementia": "bool"
+  },
+  "synonyms": {
+    "age": [],
+    "sex": ["gender"],
+    "education level": ["education", "education status"],
+    "fludeoxyglucose PET": [],
+    "amyloid beta": [],
+    "phosphorylated tau": [],
+    "APOE epsilon 4 allele": [],
+    "diagnosis of alzheimer’s dementia": ["alzheimer's disease diagnosis", "alzheimer's disease", "alzheimer’s dementia"]
+  },
+  "edges": [
+    [
+      "APOE epsilon 4 allele",
+      "amyloid beta"
+    ],
+    [
+      "age",
+      "amyloid beta"
+    ],
+    [
+      "education level",
+      "diagnosis of alzheimer’s dementia"
+    ],
+    [
+      "fludeoxyglucose PET",
+      "diagnosis of alzheimer’s dementia"
+    ],
+    [
+      "amyloid beta",
+      "fludeoxyglucose PET"
+    ],
+    [
+      "amyloid beta",
+      "phosphorylated tau"
+    ],
+    [
+      "phosphorylated tau",
+      "diagnosis of alzheimer’s dementia"
+    ]
+  ]
+}
