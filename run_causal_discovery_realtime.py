@@ -16,7 +16,6 @@ from algs.extract.extraction import extract_value_of_variables, causal_claim_ver
 from algs.pc.call_pc_proposal import run_only_add_relations, run_pc_post_add_relations, run_pc_post_add_remove_relations
 from algs.ges.ges import ges, ges_post_add_remove_relations
 from algs.notears.notears import notears, notears_post_add_remove_relations
-from algs.dagma_baseline.dagma_wrapper import dagma_nonlinear_wrapper, dagma_linear_wrapper
 
 from causallearn.utils.GraphUtils import GraphUtils
 from causallearn.graph.GeneralGraph import GeneralGraph
@@ -24,7 +23,6 @@ from causallearn.graph.GraphClass import CausalGraph
 
 from metrics import compute_metrics
 
-np.random.seed(42)
 
 def get_args():
     parser = argparse.ArgumentParser(description='LLM4Causal')
