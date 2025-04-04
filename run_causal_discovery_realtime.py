@@ -91,12 +91,12 @@ if not os.path.exists(retrieved_docs_file): #True
 
     # 2. retrieve docs by google search api
     docs = {}
-    for retrieval_terms in tqdm(unique_combinations[10000:]):
+    for retrieval_terms in tqdm(unique_combinations[]):
         query = ""
         for term in retrieval_terms:
             query += f"\"{term}\" "
         query = query.strip()
-        docs = deep_retrieve_by_google(query, docs, pages_per_query=2*len(retrieval_terms))
+        docs = deep_retrieve_by_google_academic(query, docs, pages_per_query=2*len(retrieval_terms))
         if len(docs) > 1000:
             break
 
